@@ -1,0 +1,112 @@
+@import "../../constants/constants.scss";
+
+.edit-profile-wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.edit-profile{
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  width: 25%;
+  min-width: 320px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  border: 1px solid $input-border-color;
+  border-radius: 5px;
+  padding: 40px;
+  background-color: $white-background-color;
+  box-shadow: 0px 0.6087964177131653px 2.9332919120788574px 0px #00000005;
+  box-shadow: 0px 1.4630224704742432px 7.049108028411865px 0px #00000007;
+  box-shadow: 0px 2.7547414302825928px 13.272845268249512px 0px #00000009;
+  box-shadow: 0px 4.91398811340332px 23.67648696899414px 0px #0000000B;
+  box-shadow: 0px 9.19107437133789px 44.28426742553711px 0px #0000000D;
+  box-shadow: 0px 22px 106px 0px #00000012;
+  &__title{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 21px;
+  }
+  &__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  &__label{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  &__input-text{
+      margin-bottom: 2px;
+  }
+  &__input{
+    display: flex;
+    flex: 1 auto;
+    border: 1px solid $input-border-color;
+    border-radius: 5px;
+    height: 40px;
+    padding: 8px 12px;
+    width: 100%;
+    &::placeholder{
+      color: $blind-grey-color;
+    }
+    &:hover{
+      border:1px solid $black-color;
+      border-radius: 5px;
+    }
+    &:focus{
+      border:1px solid $black-color;
+      border-radius: 5px;
+    }
+  }
+  &__input-invalid {
+    display: flex;
+    flex: 1 auto;
+    border: 1px solid $invalid-error-color;
+    border-radius: 5px;
+    height: 40px;
+    padding: 8px 12px;
+    width: 100%;
+    &::placeholder{
+      color: $blind-grey-color;
+    }
+    &:hover{
+      border:1px solid $invalid-error-color;
+      border-radius: 5px;
+    }
+    &:focus{
+      border:1px solid $invalid-error-color;
+      border-radius: 5px;
+    }
+  }
+  &__button-save{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    height: 40px;
+    border: 1px solid $input-border-color;
+    border-radius: 5px;
+    background-color: $info-color;
+    width: 100%;
+    transition: scale 0.18s ease-in;
+    color: $white-background-color;
+    &:hover{
+      transition: scale 0.18s ease-in;
+      scale: 0.90;
+    }
+  }
+  &__invalid-text{
+    color: $invalid-error-color;
+  }
+}

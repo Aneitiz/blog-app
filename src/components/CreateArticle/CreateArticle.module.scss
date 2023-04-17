@@ -1,0 +1,230 @@
+@import "../../constants/constants.scss";
+.create-article-wrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.create-article{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  width: 80%;
+  min-width: 320px;
+  background-color: $white-background-color;
+  padding: 40px 50px;
+  box-shadow: 0 0.6087964177131653px 2.9332919120788574px 0 #00000005;
+  box-shadow: 0 1.4630224704742432px 7.049108028411865px 0 #00000007;
+  box-shadow: 0 2.7547414302825928px 13.272845268249512px 0 #00000009;
+  box-shadow: 0 4.91398811340332px 23.67648696899414px 0 #0000000B;
+  box-shadow: 0 9.19107437133789px 44.28426742553711px 0 #0000000D;
+  box-shadow: 0 22px 106px 0 #00000012;
+  &__title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 21px;
+  }
+  &__test{
+    display: flex;
+  }
+  &__label{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 21px;
+  }
+  &__input{
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    border: 1px solid $input-border-color;
+    border-radius: 5px;
+    padding: 8px 12px;
+    &:hover{
+      cursor: pointer;
+      border-color: $black-color;
+    }
+    &:focus{
+      cursor: pointer;
+      border-color: $black-color;
+    }
+  }
+  &__input-invalid{
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    border: 1px solid $invalid-error-color;
+    border-radius: 5px;
+    padding: 8px 12px;
+  }
+  &__input-tag-wrapper{
+    display: flex;
+  }
+  &__input-add-tag{
+    cursor: pointer;
+    color: $info-color;
+    width: 10%;
+    min-width: 100px;
+    height: 40px;
+    border: 1px solid $info-color;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    transition: all 0.18s ease-in;
+    margin-top: auto;
+    margin-bottom: 5px;
+    &:hover{
+      cursor: pointer;
+      border-color: $success-color;
+      color: $success-color;
+      transition: all 0.18s ease-in;
+    }
+    &:focus{
+      cursor: pointer;
+      border-color: $success-color;
+      color: $success-color;
+      transition: all 0.18s ease-in;
+    }
+  }
+  &__input-tag{
+    cursor: pointer;
+    width: 30%;
+    min-width: 280px;
+    height: 40px;
+    border: 1px solid $input-border-color;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-right: 20px;
+    transition: all 0.18s ease-in;
+    &:hover{
+      cursor: pointer;
+      border-color: $black-color;
+      transition: all 0.18s ease-in;
+    }
+    &:focus{
+      cursor: pointer;
+      border-color: $black-color;
+      transition: all 0.18s ease-in;
+    }
+  }
+  &__invalid-input-tag{
+    cursor: pointer;
+    width: 30%;
+    min-width: 280px;
+    height: 40px;
+    border: 1px solid $invalid-error-color;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-right: 20px;
+    transition: all 0.18s ease-in;
+  }
+  &__input-text{
+    margin-bottom: 2px;
+  }
+  &__text-area{
+    width: 100%;
+    min-height: 168px;
+    border: 1px solid $input-border-color;
+    border-radius: 5px;
+    resize: none;
+    padding: 7px 12px;
+    cursor: pointer;
+    margin-bottom: 21px;
+    &:hover{
+      cursor: pointer;
+      border-color: $black-color;
+    }
+    &:focus{
+      cursor: pointer;
+      border-color: $black-color;
+    }
+  }
+  &__invalid-text-area{
+    width: 100%;
+    min-height: 168px;
+    border: 1px solid $invalid-error-color;
+    border-radius: 5px;
+    resize: none;
+    padding: 7px 12px;
+    cursor: pointer;
+    margin-bottom: 21px;
+  }
+  &__delete-button{
+    cursor: pointer;
+    color: $invalid-error-color;
+    width:5%;
+    min-width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid $invalid-error-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    transition: all 0.18s ease-in;
+    margin-right: 12px;
+    &:hover{
+      cursor: pointer;
+      color : $info-color;
+      border-color: $info-color;
+      transition: all 0.18s ease-in;
+    }
+    &:active{
+      cursor: pointer;
+      color : $success-color;
+      border-color: $success-color;
+      transition: all 0.18s ease-in;
+    }
+    &:focus{
+      cursor: pointer;
+      color : $info-color;
+      border-color: $info-color;
+      transition: all 0.18s ease-in;
+    }
+  }
+  &__list-item{
+    margin-bottom: 5px;
+  }
+  &__submit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    color: $white-background-color;
+    background-color: $info-color;
+    height: 40px;
+    width: 20%;
+    min-width: 100px;
+    border: 1px solid $input-border-color;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.18s ease-in;
+    &:hover{
+      cursor: pointer;
+      scale: 90%;
+      transition: all 0.18s ease-in;
+    }
+    &:focus{
+      cursor: pointer;
+      scale: 90%;
+      transition: all 0.18s ease-in;
+    }
+    &:active{
+      cursor: pointer;
+      scale: 90%;
+      transition: all 0.18s ease-in;
+    }
+  }
+  &__invalid-text{
+    color: $invalid-error-color;
+  }
+}

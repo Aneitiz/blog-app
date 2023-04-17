@@ -1,0 +1,7 @@
+@import "../../constants/constants.scss";
+.main{
+  display: flex;
+  flex-direction: column;
+  background-color: $main-background-color;
+  min-height: 968px;
+}

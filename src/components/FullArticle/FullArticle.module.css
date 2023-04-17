@@ -1,0 +1,187 @@
+.full-article-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
+  min-height: 900px;
+}
+
+.full-article {
+  min-height: 890px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: "Inter UI", sans-serif;
+  padding-top: 24px;
+}
+.full-article__inner {
+  width: 70%;
+  background-color: #FFFFFF;
+  padding: 20px;
+  box-shadow: 0px 0.6087964177px 2.9332919121px 0px rgba(0, 0, 0, 0.0196078431);
+  box-shadow: 0px 1.4630224705px 7.0491080284px 0px rgba(0, 0, 0, 0.0274509804);
+  box-shadow: 0px 2.7547414303px 13.2728452682px 0px rgba(0, 0, 0, 0.0352941176);
+  box-shadow: 0px 4.9139881134px 23.676486969px 0px rgba(0, 0, 0, 0.0431372549);
+  box-shadow: 0px 9.1910743713px 44.2842674255px 0px rgba(0, 0, 0, 0.0509803922);
+  box-shadow: 0px 22px 106px 0px rgba(0, 0, 0, 0.0705882353);
+}
+.full-article__title-user-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.full-article__title {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+  color: #1890FF;
+  margin-right: 12px;
+}
+.full-article__title-likes {
+  display: flex;
+  align-items: center;
+}
+.full-article__likes-wrapper {
+  display: flex;
+  align-items: center;
+}
+.full-article__like {
+  margin-right: 4px;
+}
+.full-article__likes-count {
+  color: rgba(0, 0, 0, 0.7490196078);
+  font-size: 12px;
+  line-height: 22px;
+  text-align: left;
+}
+.full-article__user-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.full-article__user-info-wrapper {
+  margin-right: 12px;
+}
+.full-article__username {
+  color: rgba(0, 0, 0, 0.8509803922);
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+}
+.full-article__date {
+  color: rgba(0, 0, 0, 0.5019607843);
+  font-size: 12px;
+  line-height: 22px;
+  text-align: left;
+}
+.full-article__image {
+  width: 46px;
+  height: 46px;
+  border-radius: 20px;
+}
+.full-article__tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 19px;
+}
+.full-article__tag {
+  color: #8C8C8C;
+  border: 1px solid #8C8C8C;
+  border-radius: 5px;
+  padding: 2px 6px;
+  margin-right: 6px;
+}
+.full-article__description {
+  color: #8C8C8C;
+  margin-bottom: 25px;
+}
+.full-article__markdown {
+  margin-top: 20px;
+}
+.full-article__editing-delete-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 5px;
+  margin-top: 5px;
+}
+.full-article__editing-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+  width: 70px;
+  height: 40px;
+  border: 1px solid #52C41A;
+  border-radius: 5px;
+  color: #52C41A;
+  transition: all 0.18s ease-in;
+}
+.full-article__editing-button:hover {
+  cursor: pointer;
+  border-color: #1890FF;
+  transition: all 0.18s ease-in;
+  color: #1890FF;
+}
+.full-article__editing-button:focus {
+  cursor: pointer;
+  border-color: #1890FF;
+  transition: all 0.18s ease-in;
+  color: #1890FF;
+}
+.full-article__editing-button:active {
+  cursor: pointer;
+  border-color: #1890FF;
+  transition: all 0.18s ease-in;
+  color: #1890FF;
+}
+.full-article__delete-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 40px;
+  border: 1px solid #F5222D;
+  border-radius: 5px;
+  color: #F5222D;
+  transition: all 0.18s ease-in;
+}
+.full-article__delete-button:hover {
+  cursor: pointer;
+  border-color: #1890FF;
+  transition: all 0.18s ease-in;
+  color: #1890FF;
+}
+.full-article__delete-button:focus {
+  cursor: pointer;
+  border-color: #1890FF;
+  transition: all 0.18s ease-in;
+  color: #1890FF;
+}
+.full-article__delete-button:active {
+  cursor: pointer;
+  border-color: #1890FF;
+  transition: all 0.18s ease-in;
+  color: #1890FF;
+}
+.full-article__outer-wrapper {
+  width: 200px;
+}
+
+@media (max-width: 767px) {
+  .full-article__title-user-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  .full-article__title-likes {
+    margin-bottom: 8px;
+  }
+  .full-article__user-wrapper {
+    margin-bottom: 8px;
+  }
+  .full-article__tags-wrapper {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=FullArticle.module.css.map */

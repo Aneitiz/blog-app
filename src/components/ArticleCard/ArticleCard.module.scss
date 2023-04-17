@@ -1,0 +1,106 @@
+@import "../../constants/constants.scss";
+.article-card{
+  font-family: 'Inter UI', sans-serif;
+  padding: 14px 15px;
+  width: 80%;
+  background-color: $white-background-color;
+  margin-bottom: 25px;
+  min-height: 140px;
+  min-width: 320px;
+  max-width: 80%;
+  border-radius: 5px;
+}
+.article{
+  padding: 10px 10px;
+  &__title-likes-user-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+  }
+  &__title-likes{
+    display: flex;
+    align-items: center;
+  }
+  &__title{
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    color: $info-color;
+    margin-right: 13px;
+    transition: color 0.18s ease-in;
+    &:hover{
+      cursor: pointer;
+      transition: color 0.18s ease-in;
+      color: $success-color;
+    }
+    &:focus{
+      cursor: pointer;
+      transition: color 0.18s ease-in;
+      color: $success-color;
+    }
+  }
+  &__likes{
+    align-items: center;
+    justify-self: flex-start;
+    &-button{
+
+    }
+    &-image{
+      margin-right: 5px;
+    }
+    &-count{
+      color: $black-color;
+      font-size: 12px;
+      line-height: 22px;
+      text-align: left;
+    }
+  }
+  &__user-create-time{
+    display: flex;
+    align-items: center;
+    &--inner{
+      margin-right: 12px;
+    }
+  }
+  &__user-name{
+    color: $black-color;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+  }
+  &__create-time{
+    color: $blind-grey-color;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: left;
+  }
+  &__tags{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin-bottom: 10px;
+  }
+  &__tags-item{
+    border: 1px solid $semi-black-color;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin-right: 8px;
+  }
+  &__text{
+    color: $black-color;
+    max-width: 80%;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: left;
+  }
+  &__image-wrapper{
+    width: 45px;
+    height: 45px;
+  }
+  &__image{
+      width: 45px;
+      height: 45px;
+      border-radius: 50px;
+  }
+}

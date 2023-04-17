@@ -1,0 +1,112 @@
+.edit-profile-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.edit-profile {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  width: 25%;
+  min-width: 320px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  padding: 40px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0.6087964177px 2.9332919121px 0px rgba(0, 0, 0, 0.0196078431);
+  box-shadow: 0px 1.4630224705px 7.0491080284px 0px rgba(0, 0, 0, 0.0274509804);
+  box-shadow: 0px 2.7547414303px 13.2728452682px 0px rgba(0, 0, 0, 0.0352941176);
+  box-shadow: 0px 4.9139881134px 23.676486969px 0px rgba(0, 0, 0, 0.0431372549);
+  box-shadow: 0px 9.1910743713px 44.2842674255px 0px rgba(0, 0, 0, 0.0509803922);
+  box-shadow: 0px 22px 106px 0px rgba(0, 0, 0, 0.0705882353);
+}
+.edit-profile__title {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 21px;
+}
+.edit-profile__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.edit-profile__label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.edit-profile__input-text {
+  margin-bottom: 2px;
+}
+.edit-profile__input {
+  display: flex;
+  flex: 1 auto;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  height: 40px;
+  padding: 8px 12px;
+  width: 100%;
+}
+.edit-profile__input::placeholder {
+  color: #8C8C8C;
+}
+.edit-profile__input:hover {
+  border: 1px solid rgba(0, 0, 0, 0.7490196078);
+  border-radius: 5px;
+}
+.edit-profile__input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.7490196078);
+  border-radius: 5px;
+}
+.edit-profile__input-invalid {
+  display: flex;
+  flex: 1 auto;
+  border: 1px solid #F5222D;
+  border-radius: 5px;
+  height: 40px;
+  padding: 8px 12px;
+  width: 100%;
+}
+.edit-profile__input-invalid::placeholder {
+  color: #8C8C8C;
+}
+.edit-profile__input-invalid:hover {
+  border: 1px solid #F5222D;
+  border-radius: 5px;
+}
+.edit-profile__input-invalid:focus {
+  border: 1px solid #F5222D;
+  border-radius: 5px;
+}
+.edit-profile__button-save {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  height: 40px;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  background-color: #1890FF;
+  width: 100%;
+  transition: scale 0.18s ease-in;
+  color: #FFFFFF;
+}
+.edit-profile__button-save:hover {
+  transition: scale 0.18s ease-in;
+  scale: 0.9;
+}
+.edit-profile__invalid-text {
+  color: #F5222D;
+}
+
+/*# sourceMappingURL=EditProfile.module.css.map */

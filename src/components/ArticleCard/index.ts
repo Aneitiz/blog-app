@@ -1,3 +1,3 @@
-import Article from './Article'
+import ArticleCard from './ArticleCard'
 
-export default Article
+export default ArticleCard

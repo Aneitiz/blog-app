@@ -1,0 +1,116 @@
+.sign-in-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.sign-in-form {
+  display: flex;
+  width: 420px;
+  flex-direction: column;
+  padding: 50px 30px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0.6087964177px 2.9332919121px 0 rgba(0, 0, 0, 0.0196078431);
+  box-shadow: 0 1.4630224705px 7.0491080284px 0 rgba(0, 0, 0, 0.0274509804);
+  box-shadow: 0 2.7547414303px 13.2728452682px 0 rgba(0, 0, 0, 0.0352941176);
+  box-shadow: 0 4.9139881134px 23.676486969px 0 rgba(0, 0, 0, 0.0431372549);
+  box-shadow: 0 9.1910743713px 44.2842674255px 0 rgba(0, 0, 0, 0.0509803922);
+  box-shadow: 0 22px 106px 0 rgba(0, 0, 0, 0.0705882353);
+  font-family: "Roboto", sans-serif;
+}
+.sign-in-form__title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+}
+.sign-in-form__label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.sign-in-form__input {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+.sign-in-form__input::placeholder {
+  color: #8C8C8C;
+}
+.sign-in-form__input:hover {
+  cursor: pointer;
+  border-color: rgba(0, 0, 0, 0.7490196078);
+}
+.sign-in-form__input:focus {
+  cursor: pointer;
+  border-color: rgba(0, 0, 0, 0.7490196078);
+}
+.sign-in-form__input--invalid {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #F5222D;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+.sign-in-form__input--invalid:hover {
+  cursor: pointer;
+  border-color: #F5222D;
+}
+.sign-in-form__input--invalid:focus {
+  cursor: pointer;
+  border-color: #F5222D;
+}
+.sign-in-form__paragraph {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
+.sign-in-form__button-login {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  color: #EBEEF3;
+  background-color: #1890FF;
+  border-radius: 5px;
+  transition: all 0.18s ease-in;
+}
+.sign-in-form__button-login:hover {
+  transform: scale(90%);
+  transition: all 0.18s ease-in;
+}
+.sign-in-form__to-sign-up {
+  color: #8C8C8C;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+.sign-in-form__invalid-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #F5222D;
+}
+.sign-in-form__to-sign-up-text {
+  cursor: pointer;
+  color: #1890FF;
+}
+.sign-in-form__to-sign-up-text:hover {
+  color: #52C41A;
+  transition: color 0.18s ease-in;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=SignIn.module.css.map */

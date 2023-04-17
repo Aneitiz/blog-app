@@ -38,13 +38,8 @@
     "react-redux"
   ],
   "rules": {
-    "indent": [
-      "error",
-      2,
-      {
-        "SwitchCase": 1
-      }
-    ],
+    "indent": "off",
+    "@typescript-eslint/indent": ["error"],
     "prettier/prettier": "error",
     "linebreak-style": [
       0,

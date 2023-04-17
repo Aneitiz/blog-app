@@ -1,0 +1,195 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: #FFFFFF;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.header__link-main {
+  font-family: "Inter UI", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.7490196078);
+  transition: color 0.18s ease-in;
+}
+.header__link-main:hover {
+  cursor: pointer;
+  transition: color 0.18s ease-in;
+  color: #52C41A;
+}
+.header__link-main:focus {
+  cursor: pointer;
+  transition: color 0.18s ease-in;
+  color: #52C41A;
+}
+.header__link-main:active {
+  cursor: pointer;
+  color: #1890FF;
+  transition: color 0.18s ease-in;
+}
+.header__button {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #52C41A;
+  cursor: pointer;
+  transition: color 0.18s ease-in;
+}
+.header__button:hover {
+  cursor: pointer;
+  transition: color 0.18s ease-in;
+  color: #1890FF;
+}
+.header__image {
+  width: 46px;
+  height: 46px;
+  border-radius: 50px;
+}
+.header--log-in {
+  display: flex;
+  padding: 16px;
+  background-color: #FFFFFF;
+  align-items: center;
+}
+.header--log-in-inner {
+  display: flex;
+  flex: 1 auto;
+  justify-content: flex-end;
+}
+.header__title {
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+}
+.header__button-sign-in {
+  cursor: pointer;
+  font-family: "Inter UI", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  width: 84px;
+  height: 35px;
+  color: rgba(0, 0, 0, 0.7490196078);
+  transition: color 0.18s ease-in;
+}
+.header__button-sign-in:hover {
+  cursor: pointer;
+  color: #52C41A;
+  transition: color 0.18s ease-in;
+}
+.header__button-sign-in:focus {
+  cursor: pointer;
+  color: #52C41A;
+  transition: color 0.18s ease-in;
+}
+.header__button-sign-in:active {
+  cursor: pointer;
+  color: #1890FF;
+  transition: color 0.18s ease-in;
+}
+.header__button-sign-up {
+  font-family: "Inter UI", sans-serif;
+  cursor: pointer;
+  color: #52C41A;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  width: 84px;
+  height: 35px;
+  border: 1px solid #52C41A;
+  border-radius: 5px;
+}
+.header__button-sign-up:hover {
+  cursor: pointer;
+  color: #1890FF;
+  border-color: #1890FF;
+  transition: all 0.18s ease-in;
+}
+.header__button-sign-up:focus {
+  cursor: pointer;
+  color: #1890FF;
+  border-color: #1890FF;
+  transition: all 0.18s ease-in;
+}
+.header__button-sign-up:active {
+  cursor: pointer;
+  color: #1890FF;
+  transition: color 0.18s ease-in;
+}
+.header__button-create-article {
+  cursor: pointer;
+  border: 1px solid #52C41A;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  padding: 6px 10px;
+  justify-self: flex-end;
+  margin-right: 25px;
+}
+.header__account-logo-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 27px;
+}
+.header__username {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  margin-right: 15px;
+  color: rgba(0, 0, 0, 0.7490196078);
+  transition: color 0.18s ease-in;
+  cursor: pointer;
+}
+.header__username:hover {
+  cursor: pointer;
+  transition: color 0.18s ease-in;
+  color: #52C41A;
+}
+.header__username:focus {
+  cursor: pointer;
+  transition: color 0.18s ease-in;
+  color: #52C41A;
+}
+.header__log-out-button {
+  cursor: pointer;
+  padding: 6px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.7490196078);
+  border-radius: 5px;
+  transition: all 0.18s ease-in;
+}
+.header__log-out-button:hover {
+  cursor: pointer;
+  transition: all 0.18s ease-in;
+  color: #F5222D;
+  border-color: #F5222D;
+}
+.header__log-out-button:focus {
+  cursor: pointer;
+  transition: all 0.18s ease-in;
+  color: #F5222D;
+  border-color: #F5222D;
+}
+
+@media (max-width: 767px) {
+  .header__username {
+    display: none;
+  }
+  .header__log-out-button {
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
+  .header__button-create-article {
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=Header.module.css.map */

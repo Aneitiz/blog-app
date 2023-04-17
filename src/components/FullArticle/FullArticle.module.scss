@@ -1,0 +1,187 @@
+@import "../../constants/constants.scss";
+.full-article-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
+  min-height: 900px;
+}
+.full-article{
+  min-height: 890px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: "Inter UI", sans-serif;
+  padding-top:24px;
+  &__inner{
+    width: 70%;
+    background-color: $white-background-color;
+    padding: 20px;
+    box-shadow: 0px 0.6087964177131653px 2.9332919120788574px 0px #00000005;
+    box-shadow: 0px 1.4630224704742432px 7.049108028411865px 0px #00000007;
+    box-shadow: 0px 2.7547414302825928px 13.272845268249512px 0px #00000009;
+    box-shadow: 0px 4.91398811340332px 23.67648696899414px 0px #0000000B;
+    box-shadow: 0px 9.19107437133789px 44.28426742553711px 0px #0000000D;
+    box-shadow: 0px 22px 106px 0px #00000012;
+  }
+  &__title-user-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    color: $info-color;
+    margin-right: 12px;
+  }
+  &__title-likes{
+    display: flex;
+    align-items: center;
+  }
+  &__likes-wrapper{
+    display: flex;
+    align-items: center;
+  }
+  &__like{
+    margin-right: 4px;
+  }
+  &__likes-count{
+    color: $black-color;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: left;
+  }
+  &__user-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__user-info-wrapper{
+    margin-right: 12px;
+  }
+  &__username{
+    color: $username-color;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+  }
+  &__date{
+    color: $semi-black-color;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: left;
+  }
+  &__image{
+    width: 46px;
+    height: 46px;
+    border-radius: 20px;
+  }
+  &__tags-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 19px;
+  }
+  &__tag{
+    color: $blind-grey-color;
+    border: 1px solid $blind-grey-color;
+    border-radius: 5px;
+    padding: 2px 6px;
+    margin-right: 6px;
+  }
+  &__description{
+    color:$blind-grey-color;
+    margin-bottom: 25px;
+  }
+  &__markdown{
+    margin-top: 20px;
+  }
+  &__editing-delete-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  &__editing-button{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    width: 70px;
+    height: 40px;
+    border: 1px solid $success-color;
+    border-radius: 5px;
+    color: $success-color;
+    transition: all 0.18s ease-in;
+    &:hover{
+      cursor: pointer;
+      border-color: $info-color;
+      transition: all 0.18s ease-in;
+      color: $info-color;
+    }
+    &:focus{
+      cursor: pointer;
+      border-color: $info-color;
+      transition: all 0.18s ease-in;
+      color: $info-color;
+    }
+    &:active{
+      cursor: pointer;
+      border-color: $info-color;
+      transition: all 0.18s ease-in;
+      color: $info-color;
+    }
+  }
+  &__delete-button{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+    border : 1px solid $invalid-error-color;
+    border-radius: 5px;
+    color: $invalid-error-color;
+    transition: all 0.18s ease-in;
+    &:hover{
+      cursor: pointer;
+      border-color: $info-color;
+      transition: all 0.18s ease-in;
+      color: $info-color;
+    }
+    &:focus{
+      cursor: pointer;
+      border-color: $info-color;
+      transition: all 0.18s ease-in;
+      color: $info-color;
+    }
+    &:active{
+      cursor: pointer;
+      border-color: $info-color;
+      transition: all 0.18s ease-in;
+      color: $info-color;
+    }
+  }
+  &__outer-wrapper{
+    width: 200px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .full-article{
+    &__title-user-wrapper{
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+    }
+    &__title-likes{
+      margin-bottom: 8px;
+    }
+    &__user-wrapper{
+      margin-bottom: 8px;
+    }
+    &__tags-wrapper{
+      justify-content: center;
+    }
+  }
+}

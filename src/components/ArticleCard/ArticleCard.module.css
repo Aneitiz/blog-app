@@ -1,0 +1,105 @@
+.article-card {
+  font-family: "Inter UI", sans-serif;
+  padding: 14px 15px;
+  width: 80%;
+  background-color: #FFFFFF;
+  margin-bottom: 25px;
+  min-height: 140px;
+  min-width: 320px;
+  max-width: 80%;
+  border-radius: 5px;
+}
+
+.article {
+  padding: 10px 10px;
+}
+.article__title-likes-user-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.article__title-likes {
+  display: flex;
+  align-items: center;
+}
+.article__title {
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+  color: #1890FF;
+  margin-right: 13px;
+  transition: color 0.18s ease-in;
+}
+.article__title:hover {
+  cursor: pointer;
+  transition: color 0.18s ease-in;
+  color: #52C41A;
+}
+.article__title:focus {
+  cursor: pointer;
+  transition: color 0.18s ease-in;
+  color: #52C41A;
+}
+.article__likes {
+  align-items: center;
+  justify-self: flex-start;
+}
+.article__likes-image {
+  margin-right: 5px;
+}
+.article__likes-count {
+  color: rgba(0, 0, 0, 0.7490196078);
+  font-size: 12px;
+  line-height: 22px;
+  text-align: left;
+}
+.article__user-create-time {
+  display: flex;
+  align-items: center;
+}
+.article__user-create-time--inner {
+  margin-right: 12px;
+}
+.article__user-name {
+  color: rgba(0, 0, 0, 0.7490196078);
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+}
+.article__create-time {
+  color: #8C8C8C;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: left;
+}
+.article__tags {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin-bottom: 10px;
+}
+.article__tags-item {
+  border: 1px solid rgba(0, 0, 0, 0.5019607843);
+  border-radius: 4px;
+  padding: 2px 6px;
+  margin-right: 8px;
+}
+.article__text {
+  color: rgba(0, 0, 0, 0.7490196078);
+  max-width: 80%;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: left;
+}
+.article__image-wrapper {
+  width: 45px;
+  height: 45px;
+}
+.article__image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+}
+
+/*# sourceMappingURL=ArticleCard.module.css.map */

@@ -1,5 +1,196 @@
+@import "../../constants/constants.scss";
 .header{
-  width: 100%;
-  height: 400px;
-  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: $white-background-color;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  &__link-main{
+    font-family: 'Inter UI' , sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    color: $black-color;
+    transition: color 0.18s ease-in;
+    &:hover{
+      cursor: pointer;
+      transition: color 0.18s ease-in;
+      color: $success-color;
+    }
+    &:focus{
+      cursor: pointer;
+      transition: color 0.18s ease-in;
+      color: $success-color;
+    }
+    &:active{
+      cursor: pointer;
+      color: $info-color;
+      transition: color 0.18s ease-in;
+    }
+  }
+  &__button{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: $success-color;
+    cursor: pointer;
+    transition: color 0.18s ease-in;
+    &:hover{
+      cursor: pointer;
+      transition: color 0.18s ease-in;
+      color: $info-color;
+    }
+  }
+  &__image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50px;
+  }
+  &--log-in{
+    display: flex;
+    padding: 16px;
+    background-color: $white-background-color;
+    align-items: center;
+    &-inner{
+      display: flex;
+      flex: 1 auto;
+      justify-content: flex-end;
+    }
+  }
+  &__title{
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  &__button-sign-in{
+    cursor: pointer;
+    font-family: 'Inter UI', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    width: 84px;
+    height: 35px;
+    color: $black-color;
+    transition: color 0.18s ease-in;
+    &:hover{
+      cursor: pointer;
+      color: $success-color;
+      transition: color 0.18s ease-in;
+    }
+    &:focus{
+      cursor: pointer;
+      color: $success-color;
+      transition: color 0.18s ease-in;
+    }
+    &:active{
+      cursor: pointer;
+      color: $info-color;
+      transition: color 0.18s ease-in;
+    }
+  }
+  &__button-sign-up{
+    font-family: 'Inter UI', sans-serif;
+    cursor: pointer;
+    color: $success-color;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    width: 84px;
+    height: 35px;
+    border: 1px solid $success-color;
+    border-radius: 5px;
+    &:hover{
+      cursor: pointer;
+      color: $info-color;
+      border-color: $info-color;
+      transition: all 0.18s ease-in;
+    }
+    &:focus{
+      cursor: pointer;
+      color: $info-color;
+      border-color: $info-color;
+      transition: all 0.18s ease-in;
+    }
+    &:active{
+      cursor: pointer;
+      color: $info-color;
+      transition: color 0.18s ease-in;
+    }
+  }
+  &__button-create-article{
+    cursor: pointer;
+    border: 1px solid $success-color;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    padding: 6px 10px;
+    justify-self: flex-end;
+    margin-right: 25px;
+  }
+  &__account-logo-wrapper{
+    display: flex;
+    align-items: center;
+    margin-right: 27px;
+  }
+  &__username{
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-right: 15px;
+    color:$black-color;
+    transition: color 0.18s ease-in;
+    cursor: pointer;
+    &:hover{
+      cursor: pointer;
+      transition: color 0.18s ease-in;
+      color: $success-color;
+    }
+    &:focus{
+      cursor: pointer;
+      transition: color 0.18s ease-in;
+      color: $success-color;
+    }
+  }
+  &__log-out-button{
+      cursor: pointer;
+      padding: 6px 15px;
+      border: 1px solid $black-color;
+      border-radius: 5px;
+      transition: all 0.18s ease-in;
+      &:hover{
+        cursor: pointer;
+        transition: all 0.18s ease-in;
+        color: $invalid-error-color;
+        border-color: $invalid-error-color;
+      }
+      &:focus{
+        cursor: pointer;
+        transition: all 0.18s ease-in;
+        color: $invalid-error-color;
+        border-color: $invalid-error-color;
+      }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header{
+    &__username{
+      display: none;
+    }
+    &__log-out-button{
+      padding: 0;
+      width: auto;
+      height: auto;
+    }
+    &__button-create-article{
+      padding: 0;
+      width: auto;
+      height: auto;
+    }
+  }
 }

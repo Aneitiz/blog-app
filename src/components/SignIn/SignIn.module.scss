@@ -1,0 +1,116 @@
+@import "../../constants/constants.scss";
+
+.sign-in-wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.sign-in-form{
+  display: flex;
+  width: 420px;
+  flex-direction: column;
+  padding: 50px 30px;
+  border-radius: 5px;
+  background-color: $white-background-color;
+  box-shadow: 0 0.6087964177131653px 2.9332919120788574px 0 #00000005;
+  box-shadow: 0 1.4630224704742432px 7.049108028411865px 0 #00000007;
+  box-shadow: 0 2.7547414302825928px 13.272845268249512px 0 #00000009;
+  box-shadow: 0 4.91398811340332px 23.67648696899414px 0 #0000000B;
+  box-shadow: 0 9.19107437133789px 44.28426742553711px 0 #0000000D;
+  box-shadow: 0 22px 106px 0 #00000012;
+  font-family: "Roboto", sans-serif;
+  &__title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+  }
+  &__label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  &__input{
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    border: 1px solid $input-border-color;
+    border-radius: 5px;
+    padding: 8px 12px;
+    &::placeholder{
+      color: $blind-grey-color;
+    }
+    &:hover{
+      cursor: pointer;
+      border-color: $black-color;
+    }
+    &:focus{
+      cursor: pointer;
+      border-color: $black-color;
+    }
+    &--invalid{
+      cursor: pointer;
+      width: 100%;
+      height: 40px;
+      border: 1px solid $invalid-error-color;
+      border-radius: 5px;
+      padding: 8px 12px;
+      &:hover{
+        cursor: pointer;
+        border-color: $invalid-error-color;
+      }
+      &:focus{
+        cursor: pointer;
+        border-color: $invalid-error-color;
+      }
+    }
+  }
+  &__paragraph{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+  }
+  &__button-login{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: $main-background-color;
+    background-color: $info-color;
+    border-radius: 5px;
+    transition: all 0.18s ease-in;
+    &:hover{
+      transform: scale(90%);
+      transition: all 0.18s ease-in;
+    }
+  }
+  &__to-sign-up{
+      color: $blind-grey-color;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: center;
+  }
+  &__invalid-text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: $invalid-error-color;
+  }
+  &__to-sign-up-text{
+    cursor: pointer;
+      color: $info-color;
+    &:hover{
+      color: $success-color;
+      transition: color 0.18s ease-in;
+      cursor: pointer;
+    }
+  }
+}

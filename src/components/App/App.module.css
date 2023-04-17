@@ -1,0 +1,8 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: #EBEEF3;
+  min-height: 968px;
+}
+
+/*# sourceMappingURL=App.module.css.map */

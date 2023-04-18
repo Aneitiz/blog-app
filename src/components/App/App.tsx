@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 
 import SignUp from '../SignUp'
@@ -33,7 +33,6 @@ const App: React.FC = () => {
     <section className={style.main}>
       <Routes>
         <Route path={'/'} element={<Layout />}>
-          <Route index element={<Navigate to={'/articles'} />} />
           <Route path={'/articles'} element={<ArticleList />} />
           <Route path={linkConstants.signIn} element={<SignIn />} />
           <Route path={linkConstants.signUp} element={<SignUp />} />

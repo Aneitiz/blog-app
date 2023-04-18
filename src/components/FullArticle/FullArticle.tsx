@@ -44,7 +44,7 @@ const FullArticle = () => {
     }
     dispatch(clearFormData())
     dispatch(deleteArticleFetch(data))
-    setTimeout(() => navigate('/'), 400)
+    setTimeout(() => navigate('/articles'), 400)
   }
   if (successChecker.success) {
     const { articleBySlug } = successChecker

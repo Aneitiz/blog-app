@@ -1,1 +1,1 @@
-https://blog-app-steel-sigma.vercel.app/
+https://blog-7zwsozuwe-aneitiz.vercel.app/

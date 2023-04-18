@@ -24,7 +24,7 @@ const SignIn = () => {
     if (toastData.success) {
       SuccessToast(toastConstants.successSignIn)
       if (logged) {
-        setTimeout(() => navigate('/articles'), 800)
+        setTimeout(() => navigate('/'), 800)
       }
     }
     if (toastData.payload !== null && !toastData.success) {

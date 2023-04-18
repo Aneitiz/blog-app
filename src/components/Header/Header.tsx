@@ -25,7 +25,7 @@ const Header = () => {
   const headerLogIn = () => {
     return (
       <header className={style['header--log-in']}>
-        <Link className={style['header__link-main']} to={'/articles'}>
+        <Link className={style['header__link-main']} to={'/'}>
           Realworld Blog
         </Link>
         <div className={style['header--log-in-inner']}>
@@ -50,7 +50,7 @@ const Header = () => {
   const headerUnregistered = () => {
     return (
       <header className={style.header}>
-        <Link className={style['header__link-main']} to={'/articles'}>
+        <Link className={style['header__link-main']} to={'/'}>
           Realworld Blog
         </Link>
         <div>

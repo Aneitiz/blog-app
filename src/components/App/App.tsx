@@ -33,10 +33,13 @@ const App: React.FC = () => {
     <section className={style.main}>
       <Routes>
         <Route path={'/'} element={<Layout />}>
-          <Route path={'/articles'} element={<ArticleList />} />
+          <Route index element={<ArticleList />} />
           <Route path={linkConstants.signIn} element={<SignIn />} />
+
           <Route path={linkConstants.signUp} element={<SignUp />} />
+
           <Route path={linkConstants.articleBySlug} element={<FullArticle />} />
+
           <Route
             path={linkConstants.profile}
             element={

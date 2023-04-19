@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
-import { linkConstants } from '../../constants/constants'
+import { linkConstants } from '../constants/constants'
 const RequireAuth: React.FC<{ children: JSX.Element }> = ({ children }) => {
   const navigate = useNavigate()
   const signState = (state: any) => state.sign

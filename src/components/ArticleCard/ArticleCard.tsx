@@ -7,16 +7,16 @@ import { useDispatch, useSelector } from 'react-redux'
 import inactiveLike from '../../assets/images/inactiveLike.svg'
 import standardUserImage from '../../assets/images/standardUserImage.svg'
 import activeLike from '../../assets/images/activeLike.svg'
-import { deleteFavoritedFetch, favoritedFetch } from '../../redux/articlesBySlug'
+import { deleteFavoritedFetch, favoritedFetch } from '../../store/articlesBySlug'
 import { linkConstants } from '../../constants/constants'
-import { articleListFetch } from '../../redux/articlesSlice'
+import { articleListFetch } from '../../store/articlesSlice'
 import { clippingText } from '../../helpers/clippingText'
 import { ArticleListProps } from '../../types/interfaces'
 
 import style from './ArticleCard.module.scss'
 
 const ArticleCard: React.FC<ArticleListProps> = ({ element }) => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch<any>()
   const navigate = useNavigate()
   const signState = (state: any) => state.sign
   const articlesState = (state: any) => state.articles

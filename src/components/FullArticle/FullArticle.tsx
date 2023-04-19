@@ -6,19 +6,19 @@ import format from 'date-fns/format'
 import { Popconfirm } from 'antd'
 import { v4 as createKey } from 'uuid'
 
-import { deleteFavoritedFetch, favoritedFetch, getArticlesBySlug, toggleEditing } from '../../redux/articlesBySlug'
+import { deleteFavoritedFetch, favoritedFetch, getArticlesBySlug, toggleEditing } from '../../store/articlesBySlug'
 import inactiveLike from '../../assets/images/inactiveLike.svg'
 import standardUserImage from '../../assets/images/standardUserImage.svg'
 import activeLike from '../../assets/images/activeLike.svg'
 import LoadingSpinner from '../LoadingSpinner'
-import { clearFormData, deleteArticleFetch } from '../../redux/articleFormSlice'
+import { clearFormData, deleteArticleFetch } from '../../store/articleFormSlice'
 import { linkConstants } from '../../constants/constants'
 
 import style from './FullArticle.module.scss'
 const FullArticle = () => {
   const { slug } = useParams()
   const navigate = useNavigate()
-  const dispatch = useDispatch()
+  const dispatch = useDispatch<any>()
   useEffect(() => {
     const data = {
       token: localStorage.token,

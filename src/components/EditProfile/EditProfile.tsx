@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { toastConstants, validation } from '../../constants/constants'
-import { editProfileFetch } from '../../redux/signSlice'
+import { editProfileFetch } from '../../store/signSlice'
 import SuccessToast from '../SuccessToast'
 import ErrorToast from '../ErrorToast'
 

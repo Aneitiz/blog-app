@@ -8,7 +8,7 @@ export interface ShippingFields {
 }
 
 export interface ArticleInitialState {
-  articleData: object
+  articleData: {}
   loading: boolean
   error: boolean
 }

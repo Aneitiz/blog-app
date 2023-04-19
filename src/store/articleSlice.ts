@@ -20,7 +20,7 @@ const initialState: ArticleInitialState = {
   loading: true,
   error: false,
 }
-export const articleSlice = createSlice({
+const articleSlice = createSlice({
   name: 'article',
   initialState,
   reducers: {},

@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { ToastContainer } from 'react-toastify'
 
 import { validation } from '../../constants/constants'
-import { clearFormData, editArticleFetch, postArticleFetch } from '../../redux/articleFormSlice'
+import { clearFormData, editArticleFetch, postArticleFetch } from '../../store/articleFormSlice'
 import SuccessToast from '../SuccessToast'
 import ErrorToast from '../ErrorToast'
 import LoadingSpinner from '../LoadingSpinner'

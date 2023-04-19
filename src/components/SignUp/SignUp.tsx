@@ -6,7 +6,7 @@ import { ToastContainer } from 'react-toastify'
 
 import { linkConstants, toastConstants, validation } from '../../constants/constants'
 import { ShippingFields } from '../../types/interfaces'
-import { clearData, logOut, signUpFetch } from '../../redux/signSlice'
+import { clearData, logOut, signUpFetch } from '../../store/signSlice'
 import ErrorToast from '../ErrorToast'
 import SuccessToast from '../SuccessToast'
 
@@ -36,6 +36,7 @@ const SignUp = () => {
         password: value.password,
       },
     }
+    // @ts-ignore
     dispatch(signUpFetch(data))
     dispatch(clearData())
     dispatch(logOut())

@@ -8,14 +8,14 @@ import Layout from '../Layout'
 import ArticleList from '../ArticleList'
 import { apiConstants, linkConstants } from '../../constants/constants'
 import FullArticle from '../FullArticle'
-import { loginFetch } from '../../redux/signSlice'
+import { loginFetch } from '../../store/signSlice'
 import EditProfile from '../EditProfile'
 import CreateArticle from '../CreateArticle'
-import RequireAuth from '../hoc'
+import RequireAuth from '../../hoc'
 
 import style from './App.module.scss'
 const App: React.FC = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch<any>()
   const signState = (state: any) => state.sign
   const signData = useSelector(signState)
   const token = signData.user.token

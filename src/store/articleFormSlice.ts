@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 
 import { apiConstants } from '../constants/constants'
 
-export const postArticleFetch = createAsyncThunk<ArticleFormSliceState, any>(
+export const postArticleFetch = createAsyncThunk<any, any>(
   'article/postArticleFetch',
   async (data, { rejectWithValue }) => {
     try {

@@ -4,9 +4,9 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import standardUserImage from '../../assets/images/standardUserImage.svg'
 import { linkConstants } from '../../constants/constants'
-import { clearData, logOut } from '../../redux/signSlice'
+import { clearData, logOut } from '../../store/signSlice'
 import LoadingSpinner from '../LoadingSpinner'
-import { clearEditing } from '../../redux/articlesBySlug'
+import { clearEditing } from '../../store/articlesBySlug'
 
 import style from './Header.module.scss'
 

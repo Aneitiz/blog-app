@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { ToastContainer } from 'react-toastify'
 
 import { linkConstants, toastConstants, validation } from '../../constants/constants'
-import { signInFetch } from '../../redux/signSlice'
+import { signInFetch } from '../../store/signSlice'
 import SuccessToast from '../SuccessToast'
 import ErrorToast from '../ErrorToast'
 import loadingSpinner from '../LoadingSpinner'

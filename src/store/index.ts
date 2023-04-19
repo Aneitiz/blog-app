@@ -1,7 +1,6 @@
-// @ts-ignore
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 
-import { articleSlice } from './articleSlice'
+import articleSlice from './articleSlice'
 import articlesSlice from './articlesSlice'
 import articlesBySlug from './articlesBySlug'
 import signSlice from './signSlice'

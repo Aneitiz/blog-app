@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { v4 as createKey } from 'uuid'
+import { Pagination } from 'antd'
 
 import ArticleCard from '../ArticleCard'
-import MyPagination from '../MyPagination/MyPagination'
 import LoadingSpinner from '../LoadingSpinner'
 import { NotFoundedPage } from '../NotFoundedPage/NotFoundedPage'
-import { articleListFetch } from '../../redux/articlesSlice'
+import { articleListFetch, onPaginationClick } from '../../store/articlesSlice'
 
 import style from './ArticleList.module.scss'
 
@@ -22,6 +22,7 @@ const ArticleList: React.FC = () => {
       token: token || localStorage.token,
       offset: (currentPage - 1) * 5,
     }
+    // @ts-ignore
     dispatch(articleListFetch(data))
   }, [token])
   const renderingList = () => {
@@ -41,9 +42,26 @@ const ArticleList: React.FC = () => {
       })
     }
   }
+  const onChange = (page: any) => {
+    dispatch(onPaginationClick(page))
+    const data = {
+      offset: (page - 1) * 5,
+      token: token || localStorage.token,
+    }
+    // @ts-ignore
+    dispatch(articleListFetch(data))
+  }
   const pagination: JSX.Element = (
     <li>
-      <MyPagination articlesCount={articlesCount} />
+      <Pagination
+        current={currentPage}
+        onChange={onChange}
+        pageSize={5}
+        total={articlesCount}
+        defaultCurrent={1}
+        showSizeChanger={false}
+        hideOnSinglePage
+      />
     </li>
   )
   return (

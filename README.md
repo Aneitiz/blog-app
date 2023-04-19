@@ -1,1 +1,1 @@
-https://blog-grzfqa64r-aneitiz.vercel.app/
+https://blog-ppvo8b2ub-aneitiz.vercel.app/

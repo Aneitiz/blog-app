@@ -1,9 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
 import { apiConstants } from '../constants/constants'
-import { DataForArticlesList } from '../types/becoimngDataTypes'
 
-export const articleListFetch = createAsyncThunk<InitialArticlesState, DataForArticlesList>(
+export const articleListFetch = createAsyncThunk<any, any>(
   'articles/fetchArticles',
   async (data, { rejectWithValue }) => {
     try {
